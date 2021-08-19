@@ -6,7 +6,7 @@ Follow steps:
 
 **1.**
 ```sh
-$ make run
+$ make up
 ```
 
 **2.**
