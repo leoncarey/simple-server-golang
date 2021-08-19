@@ -8,7 +8,7 @@ COPY go.mod .
 COPY go.sum .
 RUN go mod download
 
-COPY ./src/*.go ./
+COPY ./src/*.go ./app
 
 # Build
 RUN go build -o /rest-api-go

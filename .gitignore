@@ -20,7 +20,7 @@
 # vendor/
 
 ### Go Patch ###
-/vendor/
-/Godeps/
+/src/vendor/
+/src/Godeps/
 
 # End of https://www.toptal.com/developers/gitignore/api/go

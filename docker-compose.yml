@@ -2,10 +2,12 @@ version: "3.9"
 
 services:
   app:
-    build:
-      context: .
+    image: golang:1.16
+    # build:
+    #   context: .
     container_name: rest_api_go
+    # command: sh -c "cd ./src && go run --work main.go"
     volumes:
-      - ./src:/go/src/app
-    ports: 
+      - ./src:/go/src
+    ports:
       - 8000:8080

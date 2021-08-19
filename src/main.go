@@ -12,11 +12,11 @@ type Profile struct {
 
 func main() {
     http.HandleFunc("/", ServerResponse)
-    http.ListenAndServe(":8080", nil)
+    http.ListenAndServe(":3000", nil)
 }
 
 func ServerResponse(w http.ResponseWriter, r *http.Request) {
-	profile := Profile{"Léo", []string{"play", "programming"}}
+	profile := Profile{"Léo", []string{"play instruments", "programming", "youtuber"}}
 
 	js, err := json.Marshal(profile)
 	if err != nil {
