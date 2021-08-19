@@ -1,1 +1,1 @@
-# simple-server-golang
+# Simple Server Golang
